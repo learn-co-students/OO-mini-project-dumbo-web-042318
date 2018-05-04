@@ -27,23 +27,11 @@ class Recipe
     recipes_array.max_by do |recipe|
       recipes_array.count(recipe)
     end
-
   end
 
   def allergens
-    rec_ing_array = RecipeIngredient.all.select do |rec_ingredient|
-      binding.pry
-      rec_ingredient.recipe == self
-  
-end
-    rec_ing_array.map do |recipe_ing|
-      recipe_ing.ingredient
-    end
+
   end
-
-
-
-
 
   def recipe_card
     RecipeCard.all.select do |recipe_card|
@@ -55,10 +43,6 @@ end
     self.recipe_card.map do |recipe_card|
       recipe_card.user
     end
-  end
-
-  def allergens
-
   end
 
   def ingredients

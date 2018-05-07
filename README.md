@@ -25,7 +25,8 @@ should return all of the ingredients in this recipe that are allergens
 should take an array of ingredient instances as an argument, and associate each of those ingredients with this recipe
 
 
-### `User`
+
+#### `User`
 Build the following methods on the User class
 
 - `User.all`
